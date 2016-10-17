@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Главная</title>
   </head>
   <body>
 
@@ -30,14 +30,34 @@
 
     <div class="header">
       <div class="container">
-        <div class="header__logo"><img src="img/logo.png" alt=""></div>
-        <div class="header__nav"></div>
+      <div class="header__wrap">
+          <div class="header__logo"><img src="img/logo.png" alt=""></div>
+        <div class="header__nav">
+          <a class="toggler" id="toggler" href="">
+            <span></span>
+          </a>
+          <ul class="main-nav" id="main-nav">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Материалы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
         <div class="header__search">
           <form class="header__form-search" action="/" method="post">
             <input class="header__input-search" type="search" name="search" value="">
             <button class="search-btn" type="submit" name="submit-search"><img src="ico-search.png" alt=""></button>
           </form>
         </div>
+      </div>
       </div>
     </div>
 
@@ -103,7 +123,9 @@
       <div class="container">
         <div class="promo__wrap">
           <div class="promo__items">
-            <h2 class="promo__title">Компания Створ &mdash;<br><span>лидер Юга России по объемам продаж</span></h2>
+            <h2 class="promo__title">Компания Створ &mdash;<br>
+              <span>лидер Юга России по объемам продаж</span>
+            </h2>
             <div class="promo-list">
               <div class="promo-list__item">
                 <div class="promo-list__img"><img src="" alt=""></div>
@@ -124,7 +146,8 @@
           </div>
           <div class="promo-description">
             <div class="promo-description__title">Створ - идущая от глаза наблюдателя прямая линия, на которой сходятся два ориентира.</div>
-            <div class="promo-description__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации</div>
+            <div class="promo-description__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+              распределение букв и пробелов в абзацах, которое не получается при простой дубликации</div>
             <a class="promo-description__link" href="#">Читать далее</a>
           </div>
         </div>
@@ -154,9 +177,8 @@
       </div>
     </div>
 
-    <footer class="footer">
-      
-    </footer>
+    <footer class="footer"></footer>
 
+    <script src="/js/script.js" charset="utf-8"></script>
   </body>
 </html>
