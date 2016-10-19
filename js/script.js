@@ -6,3 +6,8 @@ toggler.onclick = function(event){
   document.getElementById('main-nav').classList.toggle('main-nav--visible');
   // document.getElementById('page-header').classList.toggle('page-header--menu-open');
 }
+
+// ui
+$( function() {
+    $( "#city__select" ).selectmenu();
+  });
