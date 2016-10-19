@@ -9,6 +9,16 @@
   justify-content: space-between;
   align-items: center;
   min-height: 55px;
+
+  @media @tablet-width {
+    padding: 10px 0;
+  }
+
+  @media @mobile-width {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .top-header__left {
@@ -17,6 +27,24 @@
   align-items: center;
   max-width: 535px;
   flex-grow: 1;
+
+  @media @desktop-width--lg {
+    max-width: 50%;
+  }
+
+  @media @desktop-width {
+    max-width: 490px;
+  }
+
+  @media @tablet-width {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media @mobile-width {
+    margin-bottom: 10px;
+    align-items: center;
+  }
 }
 
 .top-header__right {
@@ -25,11 +53,30 @@
   align-items: center;
   max-width: 390px;
   flex-grow: 1;
+
+  @media @desktop-width--lg {
+    max-width: 40%;
+  }
+
+  @media @desktop-width {
+    width: 215px;
+    flex-grow: 0;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  @media @mobile-width {
+    align-items: center;
+  }
 }
 
 .top-header__descriptiion {
   font-size: @font-size--sm;
   line-height: @line-height--xs;
+
+  @media @tablet-width {
+    margin-bottom: 5px;
+  }
 }
 
 .top-header__company {
@@ -38,11 +85,27 @@
 }
 
 .top-header__phone {
-  font-size: @font-size;
-  line-height: @line-height--xs;
-  font-weight: @text-bold;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("../img/ico-phone.png") no-repeat center;
+  }
+
+  @media @tablet-width {
+    margin-bottom: 5px;
+  }
 
   a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: @font-size;
+    line-height: @line-height--xs;
+    font-weight: @text-bold;
     color: @text-color--dark;
     text-decoration: none;
     border-bottom: 1px dashed @main-color;

@@ -4,13 +4,25 @@
 }
 
 .header__wrap {
+  position: relative;
   display: flex;
+  min-height: 80px;
   justify-content: space-between;
   align-items: center;
 }
 
+.header__logo {
+
+  @media @mobile-width {
+    width: 50%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
 .header__nav {
-  position: relative;
   flex-grow: 1;
   min-height: 26px;
 }

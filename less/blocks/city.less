@@ -1,6 +1,17 @@
 .city {
   font-size: @font-size;
   line-height: @line-height--xs;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("../img/ico-marker.png") no-repeat center;
+  }
 
   .ui-selectmenu-icon {
     display: none;
@@ -12,6 +23,7 @@
     border: none;
     background: none;
     outline: none;
+
   }
 
   .ui-selectmenu-text {
@@ -20,6 +32,9 @@
     font-weight: @text-bold;
     border-bottom: 1px dashed @main-color;
     margin-right: 0;
+    font-size: @font-size;
+    line-height: @line-height--xs;
+    font-weight: @text-bold;
   }
 }
 
