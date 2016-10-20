@@ -1,13 +1,17 @@
 .toggler {
-  display: flex;
-  margin-left: auto;
-  margin-right: 30px;
-  justify-content: flex-end;
-  align-items: center;
-  width: 50px;
-  min-height: 24px;
-  line-height: 3em;
-  user-select: none;
+  display: none;
+
+  @media @tablet-width {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50px;
+    min-height: 24px;
+    line-height: 3em;
+    user-select: none;
+  }
 
   > span {
     display: inline-block;
