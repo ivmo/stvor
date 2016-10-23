@@ -45,10 +45,7 @@ gulp.task("images", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build",
-    notify: false,
-    open: true,
-    ui: false
+    server: "build"
   });
 
   gulp.watch("less/**/*.less", ["less"]);

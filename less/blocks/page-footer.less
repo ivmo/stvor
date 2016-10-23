@@ -1,0 +1,155 @@
+.page-footer {
+  padding-top: 306px;
+  background: @bg-white url("../img/city-bg.jpg") repeat-x 52% 0;
+
+  .container {
+    background: @color-secondary;
+    border-top: 7px solid @main-color;
+  }
+}
+
+.page-footer__wrap {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 70px;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  @media @desktop-width {
+
+  }
+
+  @media @tablet-width {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  @media @mobile-width {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.page-footer__about {
+  width: 340px;
+
+  @media @mobile-width {
+    width: auto;
+  }
+
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.page-footer__text {
+  margin-bottom: 40px;
+  font-size: @font-size--lg;
+  line-height: @line-height;
+  font-weight: @text-lite;
+
+  @media @mobile-width {
+    margin-bottom: 20px;
+  }
+}
+
+.page-footer__menu-list {
+  width: 340px;
+
+  @media @desktop-width {
+    width: 230px;
+  }
+
+  @media @mobile-width {
+    margin-bottom: 15px;
+  }
+}
+
+.page-footer__menu-item {
+
+  @media @desktop-width {
+    margin-bottom: 8px;
+  }
+}
+
+.page-footer__menu-link {
+  color: @text-color;
+  font-size: @font-size--xlg;
+  line-height: @line-height--largest;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    border-bottom: 1px solid @main-color;
+  }
+
+  @media @desktop-width {
+    line-height: @line-height--xsm;
+  }
+}
+
+.page-footer__contacts {
+  width: 200px;
+  padding-top: 14px;
+}
+
+.page-footer__phone {
+  margin-bottom: 4px;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("../img/ico-phone.png") no-repeat center;
+  }
+}
+
+.page-footer__address {
+  margin-bottom: 4px;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("../img/ico-marker.png") no-repeat center;
+  }
+}
+
+.page-footer__email {
+  margin-bottom: 4px;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background: url("../img/ico-mail.png") no-repeat center;
+  }
+}
+
+.page-footer__link {
+  color: @text-color;
+  text-decoration: none;
+  font-size: @font-size--xlg;
+  line-height: @line-height--lg;
+
+  &:hover {
+    border-bottom: 1px solid @main-color;
+  }
+}
