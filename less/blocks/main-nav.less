@@ -28,10 +28,10 @@
   @media @tablet-width {
     border-top: 1px solid @bg-white;
     border-bottom: 1px solid @gray--darkest;
-    padding: 15px 0;
   }
 
   a {
+    padding: 15px 0;
     font-size: @font-size--md;
     line-height: @line-height--xs;
     color: @text-white;
@@ -40,7 +40,12 @@
     text-transform: uppercase;
 
     @media @tablet-width {
+      display: block;
       color: @main-color;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

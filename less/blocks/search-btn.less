@@ -9,14 +9,21 @@
   outline: none;
 }
 
+.search-btn--close {
+  background: url("../img/close.png") no-repeat center;
+}
+
 .search-btn-submit {
   background: none;
   border: none;
   border-left: 3px solid @main-color;
   width: 28px;
   height: 28px;
-  padding: 0;
-  background: url("../img/search.png") no-repeat center;
+  box-sizing: content-box;
+  padding: 4px 5px;
+  background: @color-secondary url("../img/search.png") no-repeat center;
+  cursor: pointer;
+  outline: none;
 }
 
 .search-btn--close {
