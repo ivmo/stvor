@@ -44,37 +44,22 @@
   }
 
   &:hover {
-    background: lighten(@main-color, 10%);
+    background-color: lighten(@main-color, 10%);
 
     @media @desktop-width--lg {
       opacity: 1;
     }
   }
-
-  &:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 31px;
-    height: 25px;
-    margin-top: 10px;
-  }
 }
 
 .main-slider__owl .owl-nav .owl-prev {
   left: 0;
-
-  &:after {
-    background: url("../img/arrow-left.png");
-  }
+  background: @main-color url("../img/arrow-left.png") no-repeat center;
 }
 
 .main-slider__owl .owl-nav .owl-next {
   right: 0;
-
-  &:after {
-    background: url("../img/arrow-right.png");
-  }
+  background: @main-color url("../img/arrow-right.png") no-repeat center;
 }
 
 .main-slider__owl .owl-dots {

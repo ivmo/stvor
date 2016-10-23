@@ -1,0 +1,78 @@
+.pagination {
+
+}
+
+.pagination__wrap {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+
+  @media  @desktop-width {
+    text-align: center;
+  }
+}
+
+.pagination__number {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+
+  &:last-child {
+  margin-right: 0;
+  }
+}
+
+.pagination__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: @font-size--xlg;
+  line-height: @line-height;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  color: @text-color;
+  transition: all .2s;
+
+  &:hover {
+    color: @text-white;
+    background-color: lighten(@main-color, 10%);
+  }
+
+  &:active {
+    background-color: darken(@main-color, 10%);
+  }
+}
+
+.pagination__link--prev {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  background-color: @main-color;
+  background-image: url("../img/arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px auto;
+  text-align: center;
+}
+
+.pagination__link--next {
+  width: 26px;
+  height: 26px;
+  margin-left: 8px;
+  background-color: @main-color;
+  background-image: url("../img/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px auto;
+  text-align: center;
+}
+
+.pagination__link--current {
+  background: @main-color;
+  color: @text-white;
+  pointer-events: none;
+}
