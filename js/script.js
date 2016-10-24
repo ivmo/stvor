@@ -9,6 +9,7 @@ toggler.onclick = function(event){
 
 // search
 $('.search-btn').on('click', function() {
+    $('.search-btn').toggleClass('search-btn--close');
     $('.header__form-search').toggleClass('header__form-search--visible');
     $('#search').focus();
 });
@@ -18,12 +19,18 @@ $( function() {
     $( "#city__select" ).selectmenu();
   });
 
+// fancy
+$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+
 // main slider
 $('.main-slider__owl').owlCarousel({
     items: 1,
     nav: true,
     dots: true,
     navText: [],
+    mouseDrag: false,
     // autoplay: true,
     loop:true
 });

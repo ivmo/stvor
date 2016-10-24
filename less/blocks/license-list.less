@@ -22,16 +22,32 @@
 }
 
 .license-list__item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 274px;
+  height: 282px;
   margin: 0 5px 40px 5px;
   margin-bottom: 40px;
   font-size: @font-size--xs;
+  overflow: hidden;
   transition: all 0.3s;
 
   &:hover {
-    box-shadow: 0 4px 20px 3px #a9adb5;
+    overflow: visible;
+    z-index: 2;
+
+    @media @desktop-width {
+      overflow: hidden;
+    }
+
+    .license-list__img {
+      box-shadow: 0 4px 20px 3px #a9adb5;
+
+      @media @desktop-width {
+        box-shadow: none;
+      }
+    }
   }
 
   @media @desktop-width--lg {
@@ -52,6 +68,7 @@
 .license-list__img {
   text-align: center;
   font-size: 0;
+  transition: all 0.3s;
 
   img {
     max-width: 100%;
