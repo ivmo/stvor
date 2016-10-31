@@ -1,0 +1,37 @@
+.btn {
+  display: block;
+  padding: 9px 5px;
+  font-size: @font-size;
+  line-height: @line-height--xs;
+  font-weight: @text-bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: @bg-light;
+  color: @main-color;
+  transition: all 0.2s;
+
+  &:hover {
+    background: lighten(@main-color, 10%);
+    color: @text-white;
+  }
+}
+
+.btn--catalog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 213px;
+  height: 46px;
+  margin: auto;
+  padding: 14px 0;
+  opacity: 0;
+  box-sizing: border-box;
+
+  @media @desktop-width--md {
+    width: 180px;
+    opacity: 1;
+  }
+}

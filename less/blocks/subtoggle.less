@@ -1,0 +1,50 @@
+.subtoggle {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -30px;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+
+  @media @desktop-width {
+    left: -25px;
+  }
+}
+
+.subtoggle__second {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: -2px;
+  z-index: 10;
+}
+.subtoggle:before,
+.subtoggle:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  width: 10px;
+  height: 2px;
+  background: @bg-black;
+  transform: translateX(50%);
+
+  @media @desktop-width {
+    left: 0;
+  }
+}
+.subtoggle:after {
+  transform: translateX(50%) rotate(90deg);
+}
+.subtoggle--minus:after {
+  display: none;
+}
+
+.subtoggle:hover:before,
+.subtoggle:hover:after {
+  background: @bg-black;
+}

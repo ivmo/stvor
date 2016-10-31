@@ -1,11 +1,29 @@
 .catalog {
 
+  .container {
+    background: @bg-white;
+  }
 }
 
 .catalog__wrap {
-  
+
+  .clearfix();
 }
 
 .catalog__content {
+  float: right;
+  width: 810px;
 
+  @media @desktop-width--lg {
+    width: 600px;
+  }
+
+  @media @desktop-width {
+    width: 500px;
+  }
+
+  @media @tablet-width {
+    float: none;
+    width: auto;
+  }
 }
