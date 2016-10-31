@@ -1,6 +1,5 @@
-.btn {
+.btn-review {
   display: block;
-  padding: 9px 5px;
   font-size: @font-size;
   line-height: @line-height--xs;
   font-weight: @text-bold;
@@ -9,15 +8,6 @@
   text-decoration: none;
   background: @bg-light;
   color: @main-color;
-  transition: all 0.2s;
-
-  &:hover {
-    background: lighten(@main-color, 10%);
-    color: @text-white;
-  }
-}
-
-.btn--catalog {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,9 +19,15 @@
   padding: 14px 0;
   opacity: 0;
   box-sizing: border-box;
+  transition: all 0.2s;
 
   @media @desktop-width--md {
     width: 180px;
     opacity: 1;
+  }
+
+  &:hover {
+    background: lighten(@main-color, 10%);
+    color: @text-white;
   }
 }

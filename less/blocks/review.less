@@ -1,0 +1,55 @@
+.review {
+  display: none;
+}
+
+.review__wrap {
+  position: relative;
+  width: 874px;
+  margin: auto;
+  padding: 48px;
+  background: @bg-white;
+  box-sizing: border-box;
+
+  .clearfix();
+}
+
+.review__pic {
+  float: left;
+  width: 35%;
+  margin: 0;
+  border: 2px solid @main-color;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.review__pic img {
+  max-width: 100%;
+}
+
+.review__info {
+  float: right;
+  width: 60%;
+  box-sizing: border-box;
+
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  color: @main-color;
+  font-weight: @text-normal;
+  font-size: @title-size--sm;
+  line-height: @line-height--largest;
+}
+
+.review__table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+.review__row td:first-child {
+  font-weight: @text-bold;
+}

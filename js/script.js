@@ -65,3 +65,12 @@ jQuery(document).ready(function(){
     });
   });
 });
+
+jQuery(document).ready(function(){
+    jQuery('.btn-review').on('click', function(event) {
+      event.preventDefault();
+      jQuery('#popup-review').arcticmodal();
+    });
+
+  jQuery('#modal-phone').mask('+7(999)999-99-99');
+});
