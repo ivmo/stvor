@@ -31,13 +31,13 @@ $('.main-slider__owl').owlCarousel({
     dots: true,
     navText: [],
     mouseDrag: false,
-    // autoplay: true,
+    autoplay: true,
     loop:true
 });
 
 // partners slider
 $('.partners-list').owlCarousel({
-    // autoplay: true,
+    autoplay: true,
     loop:true,
     margin: 60,
     responsive:{
