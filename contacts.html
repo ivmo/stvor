@@ -93,30 +93,29 @@
         <div class="container">
           <h1 class="page-title">Контакты</h1>
           <div class="contacts-top">
-            <div class="map"></div>
+            <div class="contacts-top__map" id="map"></div>
             <div class="contacts-top__feedback">
+              <h2 class="contacts-top__title">Форма обратной связи</h2>
               <form class="form" action="index.html" method="post">
                 <div class="field-text">
-                  <label class="field-text__label">
-                    <input class="field-text__input" type="text" name="name" placeholder="Ваше имя">
-                  </label>
+                  <input class="field-text__input" id="name" type="text" name="name">
+                  <label class="field-text__label" for="name" data-first="Ваше имя"></label>
                 </div>
                 <div class="field-text">
-                  <label class="field-text__label">
-                    <input class="field-text__input" type="email" name="email" placeholder="Ваш e-mail">
-                  </label>
+                  <input class="field-text__input" id="email" type="email" name="email">
+                  <label class="field-text__label" for="email" data-first="Ваш e-mail"></label>
                 </div>
                 <div class="field-text">
-                  <label class="field-text__label">
-                    <input class="field-text__input  field-text__input--phone" type="text" name="phone" placeholder="Ваш телефон">
-                  </label>
+                  <input class="field-text__input  field-text__input--phone" id="phone" type="text" name="phone">
+                  <label class="field-text__label" for="email" data-first="Ваш телефон"></label>
                 </div>
                 <div class="form__comment">
                   <div class="field-text">
-                    <textarea name="comments" class="field__textarea" rows="8" cols="40" placeholder="Ваше сообщение"></textarea>
+                    <textarea class="field-text__textarea" id="comments" name="comments" rows="8" cols="40"></textarea>
+                    <label class="field-text__label" for="comments" data-first="Ваше сообщение"></label>
                   </div>
                 </div>
-                <button class="form__btn" type="submit" name="submit">Отправить форму</button>
+                <button class="form__btn" type="submit" name="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -258,6 +257,7 @@
     <script src="js/jquery.fancybox.js" charset="utf-8"></script>
     <script src="js/jquery.arcticmodal-0.3.min.js" charset="utf-8"></script>
     <script src="js/jquery.maskedinput.js" charset="utf-8"></script>
+    <script src="http://maps.google.com/maps/api/js?&sensor=false&key=AIzaSyBi83iODS4eaD3i15c4-fpqg5rVchRAOnk"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

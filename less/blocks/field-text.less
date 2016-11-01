@@ -1,0 +1,69 @@
+.field-text {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.field-text__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 0 2px @main-color inset;
+
+  &:hover {
+    box-shadow: 0 0 0 2px lighten(@main-color, 20%) inset;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px @color-active inset;
+    }
+
+  &:focus + .field-text__label {
+    transform: translateY(-53px);
+    font-size: 10px;
+    color: @color-active;
+  }
+}
+
+.field-text__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 0 2px @main-color inset;
+
+  &:hover {
+    box-shadow: 0 0 0 2px lighten(@main-color, 20%) inset;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px @color-active inset;
+    }
+
+  &:focus + .field-text__label {
+    transform: translateY(-53px);
+    font-size: 10px;
+    color: @color-active;
+  }
+}
+
+.field-text__label {
+  position: absolute;
+  top: 32px;
+  left: 12px;
+  color: @gray--darkest;
+  font-size: @font-size;
+  font-weight: @text-normal;
+  z-index: 2;
+  pointer-events: none;
+  transition: transform 200ms ease;
+  transform: translateY(-28px);
+  font-style: italic;
+
+  &:before {
+    content: attr(data-first);
+    white-space: nowrap;
+  }
+}

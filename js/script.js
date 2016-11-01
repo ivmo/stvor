@@ -74,3 +74,22 @@ jQuery(document).ready(function(){
 
   jQuery('#modal-phone').mask('+7(999)999-99-99');
 });
+
+var map;
+function initialize() {
+  var moscow = new google.maps.LatLng(44.038725,43.064297);
+  var myOptions = {
+  zoom: 16,
+    scrollwheel: false,
+  center: moscow,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map"), myOptions);
+var point1 = new google.maps.LatLng(44.038725,43.064297);
+var marker = new google.maps.Marker({
+  position: point1, map: map, title: '��������'
+});
+}
+jQuery(window).load(function(){
+   initialize();
+});
