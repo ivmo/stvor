@@ -31,6 +31,32 @@
   margin-bottom: 1px;
 }
 
+.aside-nav .aside-nav__item--active {
+
+  >a {
+    color: @main-color;
+  }
+
+  .aside-nav__submenu {
+    display: block;
+
+    .aside-nav__item--active {
+      pointer-events: none;
+    }
+  }
+
+  .subtoggle {
+
+    &:before {
+      background: @main-color;
+    }
+
+    &:after {
+      background: @main-color;
+    }
+  }
+}
+
 .aside-nav__item:hover>a {
   text-decoration: underline;
 }

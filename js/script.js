@@ -56,7 +56,9 @@ $('.partners-list').owlCarousel({
 jQuery(document).ready(function(){
   // jQuery('#aside-nav .aside-nav__submenu').after("<span class='subtoggle'></span>");
 
+
   jQuery(function() {
+    jQuery('.aside-nav__item--drop.aside-nav__item--active > .subtoggle').addClass("subtoggle--minus");
     jQuery('.aside-nav > .aside-nav__item--drop').each(function(i, listitem) {
       jQuery(listitem).find('.subtoggle').on('click', function() {
         jQuery(this).toggleClass('subtoggle--minus');
