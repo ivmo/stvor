@@ -72,7 +72,7 @@ jQuery(document).ready(function(){
       jQuery('#popup-review').arcticmodal();
     });
 
-  jQuery('#modal-phone').mask('+7(999)999-99-99');
+  jQuery('.field-text__input--phone').mask('+7(999)999-99-99');
 });
 
 var map;
