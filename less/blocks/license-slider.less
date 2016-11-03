@@ -1,0 +1,42 @@
+.license-slider {
+  margin-bottom: 55px;
+}
+
+.license-slider__list {
+  max-width: 990px;
+  margin: auto;
+}
+
+.license-slider__list .owl-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  margin: auto;
+
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.license-slider__list .owl-nav .owl-prev,
+.license-slider__list .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 47px;
+  height: 47px;
+  text-align: center;
+}
+
+.license-slider__list .owl-nav .owl-prev {
+  left: -60px;
+  background: url("../img/arrow-prev.png") no-repeat center;
+}
+
+.license-slider__list .owl-nav .owl-next {
+  right: -60px;
+  background: url("../img/arrow-next.png") no-repeat center;
+}

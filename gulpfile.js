@@ -73,7 +73,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "less",
-    // "images",
+    "images",
     fn
   );
 });

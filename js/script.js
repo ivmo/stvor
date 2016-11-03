@@ -53,9 +53,28 @@ $('.partners-list').owlCarousel({
     }
 });
 
+// license slider
+$('.license-slider__list').owlCarousel({
+    autoplay: true,
+    nav: true,
+    loop:true,
+    margin: 10,
+    navText: [],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+
 jQuery(document).ready(function(){
   // jQuery('#aside-nav .aside-nav__submenu').after("<span class='subtoggle'></span>");
-
 
   jQuery(function() {
     jQuery('.aside-nav__item--drop.aside-nav__item--active > .subtoggle').addClass("subtoggle--minus");
