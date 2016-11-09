@@ -49,8 +49,10 @@
 .header__form-wrap {
   position: relative;
   height: 36px;
-  background: @bg-white;
+  // padding-top: 12px;
+  // background: @bg-white;
   font-size: 0;
+  white-space: nowrap;
 }
 
 .header__label-search {
@@ -80,6 +82,7 @@
   color: @bg-black;
   font-size: @font-size--md;
   line-height: @line-height--largest;
+  height: 36px;
 
   &:invalid + .header__label-search {
     transform: translateY(0);

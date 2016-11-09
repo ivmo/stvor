@@ -23,6 +23,7 @@
 
 .top-header__left {
   display: flex;
+  flex-basis: 535px;
   justify-content: space-between;
   align-items: center;
   max-width: 535px;
@@ -30,10 +31,12 @@
 
   @media @desktop-width--lg {
     max-width: 50%;
+
   }
 
   @media @desktop-width {
     max-width: 490px;
+		flex-basis: auto;
   }
 
   @media @tablet-width {
@@ -51,6 +54,7 @@
 
 .top-header__right {
   display: flex;
+  flex-basis: 390px;
   justify-content: space-between;
   align-items: center;
   max-width: 390px;
@@ -58,6 +62,7 @@
 
   @media @desktop-width--lg {
     max-width: 40%;
+
   }
 
   @media @desktop-width {
@@ -65,6 +70,7 @@
     flex-grow: 0;
     flex-direction: column-reverse;
     align-items: flex-start;
+		flex-basis: auto;
   }
 
   @media @mobile-width {
