@@ -1,11 +1,20 @@
 // menu
+var submenu = document.querySelector('.main-nav__sub-menu');
+var subtoggle = document.querySelector('.main-nav__subtoggle');
 var toggler = document.getElementById('toggler');
 toggler.onclick = function(event){
   event.preventDefault();
   toggler.classList.toggle('toggler--close');
   document.getElementById('main-nav').classList.toggle('main-nav--visible');
-  // document.getElementById('page-header').classList.toggle('page-header--menu-open');
 }
+
+subtoggle.onclick = function(event){
+	event.preventDefault();
+	subtoggle.classList.toggle('main-nav__subtoggle--up');
+	submenu.classList.toggle('main-nav__sub-menu--show');
+}
+
+
 
 // search
 $('.search-btn').on('click', function() {
