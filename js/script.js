@@ -1,6 +1,6 @@
 // menu
 var submenu = document.querySelector('.main-nav__sub-menu');
-var subtoggle = document.querySelector('.main-nav__subtoggle');
+var subtoggle = document.querySelectorAll('.main-nav__subtoggle');
 var toggler = document.getElementById('toggler');
 toggler.onclick = function(event){
   event.preventDefault();
@@ -8,12 +8,15 @@ toggler.onclick = function(event){
   document.getElementById('main-nav').classList.toggle('main-nav--visible');
 }
 
-subtoggle.onclick = function(event){
-	event.preventDefault();
-	subtoggle.classList.toggle('main-nav__subtoggle--up');
-	submenu.classList.toggle('main-nav__sub-menu--show');
-}
-
+jQuery(function() {
+	jQuery('#main-nav > .main-nav__item--drop').each(function(i, listitem) {
+		jQuery(listitem).find('.main-nav__subtoggle').on('click', function() {
+			jQuery(this).toggleClass('main-nav__subtoggle--up');
+			jQuery(listitem).find(".main-nav__sub-menu").toggleClass('main-nav__sub-menu--show');
+		});
+	});
+});
+// end menu
 
 
 // search
