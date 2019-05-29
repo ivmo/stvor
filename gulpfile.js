@@ -43,15 +43,6 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", function() {
-  server.init({
-    server: "build"
-  });
-
-  gulp.watch("less/**/*.less", ["less"]);
-  gulp.watch("*.html").on("change", server.reload);
-});
-
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2,ttf}",
@@ -76,4 +67,13 @@ gulp.task("build", function(fn) {
     // "images",
     fn
   );
+});
+
+gulp.task("serve", function() {
+  server.init({
+    server: "build"
+  });
+
+  gulp.watch("less/**/*.less", ["less"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
